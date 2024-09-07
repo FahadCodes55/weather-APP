@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather APP</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+    <form action="/weather" method="POST">
+    <div class="details">
+        <h1>Weather APP</h1>
+        <div class="box">
+            <input type="text" name="name" placeholder="Search city">
+            <input type="submit" value="Search" class="btn">
+        </div>
+    </div>
+    </form>
+
+            <div class="city">
+        <div class="name">
+            <h1>{{ city_name }}</h1>
+            <p>{{ country }}</p>
+        </div>
+        <h2>{{ temp }}&deg;C</h2>
+        <p>Feels like {{ feels }}&deg;C</p>
+    </div>
+
+    <div class="city">
+        <div class="name">
+            <h2>Weather</h2>
+            <p>Now</p>
+        </div>
+        <img src="http://openweathermap.org/img/wn/{{ icon }}.png" alt="Weather icon">
+        <p class="des">{{ des_weather }}</p>
+    </div>
+        </header>
+</body>
+</html>

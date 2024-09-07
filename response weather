@@ -1,0 +1,48 @@
+api_key = YOUR_API_KEY
+
+    {
+    'coord': {
+    'lon': 74.1883,
+    'lat': 32.1617
+    },
+    'weather': [
+       {
+        'id': 802,
+        'main': 'Clouds',
+        'description': 'scattered clouds',
+        'icon': '03n'
+        }
+       ],
+        'base': 'stations',
+        'main': {
+        'temp': 30.03,
+        'feels_like': 33.73,
+        'temp_min': 30.03,
+        'temp_max': 30.03,
+        'pressure': 1001,
+        'humidity': 64,
+        'sea_level': 1001,
+        'grnd_level': 976
+        },
+        'visibility': 10000,
+        'wind': {
+            'speed': 0.31,
+            'deg': 225,
+            'gust': 0.39
+            },
+        'clouds': {
+            'all': 48
+            },
+            'dt': 1725467293,
+            'sys': {
+                'type': 1,
+                'id': 7594,
+                'country':'PK',
+                'sunrise': 1725410432,
+                'sunset': 1725456264
+                },
+            'timezone': 18000,
+            'id': 1177662,
+            'name': 'Gujranwala',
+            'cod': 200
+            }

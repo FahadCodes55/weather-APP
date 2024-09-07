@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: auto;
+/*    background-color: #fffc33;    */
+
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url("weather.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.details h1 {
+    text-align: center;
+    color: green;
+    padding: 30px;
+}
+
+.box {
+    border: 0px solid red;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: rgba(25, 255, 255, 0.8);
+}
+
+.box input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.city {
+    border: 0px solid black;
+    width: 80%;
+    max-width: 300px;
+    height: 130px;
+    margin: 20px auto;
+    color: white;
+    padding: 15px;
+    background-color: rgb(100, 220, 200);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    border-radius: 5px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name p {
+    margin-left: 10px;
+}
+
+.name h1 {
+    font-size: 30px;
+}
+
+.city h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.city h3 {
+    margin-top: -10px;
+    color: #fff;
+}
+
+.city img {
+    display: block;
+    margin: 0 auto;
+}
+
+.des {
+    margin-top: -15px;
+}
+strong{
+    margin-left: 550px;
+    font-size: 20px;
+    color: red;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .box, .city {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .box input, .btn {
+        width: calc(100% - 10px);
+    }
+
+    .name h1, .city h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details h1 {
+        font-size: 20px;
+    }
+
+    .name h1, .city h2 {
+        font-size: 20px;
+    }
+
+    .box input, .btn {
+        padding: 8px;
+    }
+}
+
